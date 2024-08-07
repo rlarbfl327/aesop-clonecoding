@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aesop</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="img/favicon.png">
+  <!-- reset -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- mobile css -->
+  <link rel="stylesheet" href="css/mobMain.css">
+  <!-- font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- jQuery 연결 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- plugin 연결 -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- js 호출 -->
+  <script src="js/scrollAni.js"></script>
+  <script src="js/headerFix.js"></script>
+  <script src="js/storeTab.js"></script>
+  <script src="js/mobCategory.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/map.js"></script>
+
+</head>
+
+<body>
+
+  <!----- 헤더 ----->
+
+  <header>
+    <h2 class="hidden">탑 메뉴 바</h2>
+    <div id="header_inner">
+
+      <!----- 데스크탑 ----->
+
+      <ul id="nav">
+        <!-- 로고 -->
+        <li>
+          <h2 class="logo">
+            <a href="#">
+              <img src="img/logo.png" alt="이솝 로고">
+            </a>
+          </h2>
+        </li>
+
+        <!-- 헤더 메뉴 -->
+
+        <!-- 스킨 케어 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">스킨 케어</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>카테고리</li>
+                <li><a href="#">스킨케어 모두 보기</a></li>
+                <li><a href="#">클렌저</a></li>
+                <li><a href="#">각질 제거</a></li>
+                <li><a href="#">트리트먼트 & 마스크</a></li>
+                <li><a href="#">토너</a></li>
+                <li><a href="#">하이드레이터</a></li>
+                <li><a href="#">립 & 아이</a></li>
+                <li><a href="#">쉐이빙</a></li>
+                <li><a href="#">선 케어</a></li>
+                <li><a href="#">키트</a></li>
+                <li><a href="#">스킨 케어 세트 추천</a></li>
+                <li><a href="#">스킨 케어 기프트</a></li>
+              </ul>
+              <ul class="dep2">
+                <li>피부타입</li>
+                <li><a href="#">중성</a></li>
+                <li><a href="#">건성</a></li>
+                <li><a href="#">지성</a></li>
+                <li><a href="#">복합성</a></li>
+              </ul>
+              <ul class="dep3">
+                <li>레인지</li>
+                <li><a href="#">파슬리 씨드</a></li>
+                <li><a href="#">스킨케어 플러스</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/skincare.jpg" alt="헤어 오일 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 바디 & 핸드 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">바디 & 핸드</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>카테고리</li>
+                <li><a href="#">바디 & 핸드 모두 보기</a></li>
+                <li><a href="#">핸드</a></li>
+                <li><a href="#">바디</a></li>
+                <li><a href="#">퍼스널 케어</a></li>
+                <li><a href="#">번들</a></li>
+                <li><a href="#">핸드 및 바디 케어 기프트</a></li>
+              </ul>
+              <ul class="dep2">
+                <li>레인지</li>
+                <li><a href="#">제라늄 리프</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/hand.jpg" alt="손 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 헤어 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">헤어</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep4">
+                <li>카테고리</li>
+                <li><a href="#">헤어 모두 보기</a></li>
+                <li><a href="#">샴푸</a></li>
+                <li><a href="#">컨디셔너</a></li>
+                <li><a href="#">트리트먼트</a></li>
+                <li><a href="#">그루밍</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/hair.jpg" alt="머리카락이 날리는 여성 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 향수 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">향수</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>카테고리</li>
+                <li><a href="#">향수 모두 보기</a></li>
+                <li><a href="#">미라세티</a></li>
+                <li><a href="#">카르스트</a></li>
+                <li><a href="#">에레미아</a></li>
+                <li><a href="#">로즈</a></li>
+                <li><a href="#">휠</a></li>
+                <li><a href="#">마라케시</a></li>
+                <li><a href="#">테싯</a></li>
+              </ul>
+              <ul class="dep2">
+                <li>향수 아로마</li>
+                <li><a href="#">플로럴</a></li>
+                <li><a href="#">프레쉬</a></li>
+                <li><a href="#">우디</a></li>
+                <li><a href="#">오퓰런트</a></li>
+                <li><a href="#">아더토피아</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/aroma.jpg" alt="아로마 꽃밭 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 홈 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">홈</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>카테고리</li>
+                <li><a href="#">홈 모두 보기</a></li>
+                <li><a href="#">홈</a></li>
+                <li><a href="#">문학</a></li>
+                <li><a href="#">홈 케어 기프트</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/home.jpg" alt="실내 스탠드 조명 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 키트 & 여행 제품 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">키트 & 여행 제품</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>카테고리</li>
+                <li><a href="#">키트 & 여행 제품 모두 보기</a></li>
+                <li><a href="#">시즈널 기프트 키트</a></li>
+                <li><a href="#">스킨케어 키트</a></li>
+                <li><a href="#">바디 & 핸트 케어 키트</a></li>
+                <li><a href="#">여행</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/travel.jpg" alt="야자수 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 기프트 가이드 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">기프트 가이드</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>기프트 가이드</li>
+                <li><a href="#">전체 기프트</a></li>
+                <li><a href="#">감사와 존경의 표시</a></li>
+                <li><a href="#">시즈널 기프트 키트</a></li>
+                <li><a href="#">이솝에서 사랑받는 제품들</a></li>
+                <li><a href="#">관대한 선물</a></li>
+                <li><a href="#">기프트 번들</a></li>
+                <li><a href="#">홈 케어 기프트</a></li>
+                <li><a href="#">나를 위한 선물</a></li>
+                <li><a href="#">트래블 기프트</a></li>
+                <li><a href="#">작은 제스처</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/guide.jpg" alt="막대 자 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 읽기 메뉴 -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">읽기</a>
+          <!-- sub -->
+          <div class="menu_sub">
+            <div class="sub_inner">
+              <ul class="dep1">
+                <li>아테네움</li>
+                <li><a href="#">모두보기</a></li>
+                <li><a href="#">피부의 수분 공급을 위한 가이드</a></li>
+                <li><a href="#">스킨 케어 루틴을 관리하는 방법</a></li>
+                <li><a href="#">피부 타입 소개</a></li>
+                <li><a href="#">스킨 케어의 항산화 성분</a></li>
+              </ul>
+              <ul class="dep2">
+                <li>회사 소개</li>
+                <li><a href="#">브랜드 스토리</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">이솝 재단</a></li>
+                <li><a href="#">문의하기</a></li>
+                <li><a href="#">아더토피아</a></li>
+              </ul>
+              <ul class="dep3">
+                <li>철학</li>
+                <li><a href="#">디자인</a></li>
+                <li><a href="#">제품</a></li>
+              </ul>
+              <!-- 이미지 -->
+              <div class="sub_menu_img">
+                <img src="img/book.jpg" alt="책 이미지">
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- 스토어 메뉴  -->
+        <li class="menu_wrap">
+          <a href="#" class="menu">스토어</a>
+          <!-- sub -->
+          <div class="search">
+            <div class="sub_search">
+              <div class="search_txt">
+                찾고 싶은 매장을 검색해 보세요.
+              </div>
+              <!-- 스토어 검색 폼 -->
+              <form>
+                <label class="hidden">검색 바</label>
+                <input class="search_bar" type="search" placeholder="청담점" onfocus="this.placeholder=''"
+                  onblur="this.placeholder='청담점'">
+
+                <!-- 스토어 검색 버튼 -->
+                <button class="search_btn">
+                  <img src="img/search_icon_b.png" alt="스토어 검색 버튼">
+                </button>
+              </form>
+            </div>
+          </div>
+        </li>
+
+        <!-- 유저 편의 메뉴 -->
+        <li class="user_menu">
+          <a href="#" class="icon">로그인</a>
+          <a href="#" class="icon">카트</a>
+          <a href="#" class="icon">검색</a>
+        </li>
+      </ul>
+
+      <!----- 모바일 ----->
+
+      <!-- 모바일 카테고리 버튼 -->
+      <div class="category_m">
+        <span class="hidden">카테고리 버튼</span>
+        <span class="hidden">카테고리 버튼</span>
+      </div>
+
+      <!-- 모바일 카테고리 -->
+      <div class="category_box">
+        <ul>
+          <!-- 모바일 유저 편의 메뉴 -->
+          <li class="m_user">
+            <a href="#">로그인</a>
+            <span></span>
+            <a href="#">마이페이지</a>
+            <span></span>
+            <a href="#">검색</a>
+          </li>
+
+          <!-- 모바일 스킨 케어 메뉴 -->
+          <li class="sub_m">
+            <a class="sub_title" href="#">스킨 케어</a>
+            <ul class="menu">
+              <li><a href="#">스킨케어 모두 보기</a></li>
+              <li><a href="#">클렌저</a></li>
+              <li><a href="#">각질 제거</a></li>
+              <li><a href="#">트리트먼트 & 마스크</a></li>
+              <li><a href="#">토너</a></li>
+              <li><a href="#">하이드레이터</a></li>
+              <li><a href="#">립 & 아이</a></li>
+              <li><a href="#">쉐이빙</a></li>
+              <li><a href="#">선 케어</a></li>
+              <li><a href="#">키트</a></li>
+              <li><a href="#">스킨 케어 세트 추천</a></li>
+              <li><a href="#">스킨 케어 기프트</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 바디 & 핸드 메뉴 -->
+          <li class="sub_m">
+            <a class="sub_title" href="#">바디 & 핸드</a>
+            <ul class="menu">
+              <li><a href="#">바디 & 핸드 모두 보기</a></li>
+              <li><a href="#">핸드</a></li>
+              <li><a href="#">바디</a></li>
+              <li><a href="#">퍼스널 케어</a></li>
+              <li><a href="#">번들</a></li>
+              <li><a href="#">핸드 및 바디 케어 기프트</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 헤어 메뉴 -->
+          <li class="sub_m">
+            <a class="sub_title" href="#">헤어</a>
+            <ul class="menu">
+              <li><a href="#">헤어 모두 보기</a></li>
+              <li><a href="#">샴푸</a></li>
+              <li><a href="#">샴푸</a></li>
+              <li><a href="#">컨디셔너</a></li>
+              <li><a href="#">트리트먼트</a></li>
+              <li><a href="#">그루밍</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 향수 메뉴  -->
+          <li class="sub_m">
+            <h2 class="hidden">향수 메뉴</h2>
+            <a class="sub_title" href="#">향수</a>
+            <ul class="menu">
+              <li><a href="#">향수 모두 보기</a></li>
+              <li><a href="#">미라세티</a></li>
+              <li><a href="#">카르스트</a></li>
+              <li><a href="#">에레미아</a></li>
+              <li><a href="#">로즈</a></li>
+              <li><a href="#">휠</a></li>
+              <li><a href="#">마라케시</a></li>
+              <li><a href="#">테싯</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 홈 메뉴 -->
+          <li class="sub_m">
+            <h2 class="hidden">홈 메뉴</h2>
+            <a class="sub_title" href="#">홈</a>
+            <ul class="menu">
+              <li><a href="#">홈 모두 보기</a></li>
+              <li><a href="#">홈</a></li>
+              <li><a href="#">문학</a></li>
+              <li><a href="#">홈 케어 기프트</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 키트 & 여행 제품 메뉴 -->
+          <li class="sub_m">
+            <h2 class="hidden">키트 & 여행 제품 메뉴</h2>
+            <a class="sub_title" href="#">키트 & 여행 제품</a>
+            <ul class="menu">
+              <li><a href="#">키트 & 여행 제품 모두 보기</a></li>
+              <li><a href="#">시즈널 기프트 키트</a></li>
+              <li><a href="#">스킨케어 키트</a></li>
+              <li><a href="#">바디 & 핸트 케어 키트</a></li>
+              <li><a href="#">여행</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 기프트 가이드 메뉴 -->
+          <li class="sub_m">
+            <h2 class="hidden">기프트 가이드 메뉴</h2>
+            <a class="sub_title" href="#">기프트 가이드</a>
+            <ul class="menu">
+              <li><a href="#">전체 기프트</a></li>
+              <li><a href="#">감사와 존경의 표시</a></li>
+              <li><a href="#">시즈널 기프트 키트</a></li>
+              <li><a href="#">이솝에서 사랑받는 제품들</a></li>
+              <li><a href="#">관대한 선물</a></li>
+              <li><a href="#">기프트 번들</a></li>
+              <li><a href="#">홈 케어 기프트</a></li>
+              <li><a href="#">나를 위한 선물</a></li>
+              <li><a href="#">트래블 기프트</a></li>
+              <li><a href="#">작은 제스처</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 읽기 메뉴 -->
+          <li class="sub_m">
+            <h2 class="hidden">읽기 메뉴</h2>
+            <a class="sub_title" href="#">읽기</a>
+            <ul class="menu">
+              <li><a href="#">모두보기</a></li>
+              <li><a href="#">피부의 수분 공급을 위한 가이드</a></li>
+              <li><a href="#">스킨 케어 루틴을 관리하는 방법</a></li>
+              <li><a href="#">피부 타입 소개</a></li>
+              <li><a href="#">스킨 케어의 항산화 성분</a></li>
+            </ul>
+          </li>
+
+          <!-- 모바일 스토어 검색 메뉴 -->
+          <li class="sub_m">
+            <h2 class="hidden">스토어 검색 메뉴</h2>
+            <a class="sub_title" href="#">스토어</a>
+            <div class="search_m menu">
+              <form>
+                <label class="hidden">스토어 검색바</label>
+                <input class="search_bar" type="search" placeholder="청담점" onfocus="this.placeholder=''"
+                  onblur="this.placeholder='청담점'">
+                <input class="search_btn" type="image" src="img/search_btn2_b.png" alt="스토어 검색 버튼">
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 데스크탑 헤더 배경  -->
+    <div class="layer_shadow"></div>
+  </header>
+
+  <!----- 메인 ----->
+
+  <main>
+    <h2 class="hidden">메인</h2>
+
+    <!-- 메인 이미지 -->
+    <div class="main_img">
+      <img src="img/main_img.png" alt="제목이 이솝인 책 이미지">
+    </div>
+
+    <!-- 제품명, 설명, 버튼 -->
+    <div class="main_content">
+      <div class="content_wrap">
+        <h4>레저렉션 아로마틱 핸드 밤</h4>
+        <p>
+          지친 손과 큐티클에 풍부한 수분을 공급해주는<br>
+          향긋한 보태니컬 핸드 밤
+        </p>
+        <div class="btn">
+          핸드 제품 더보기
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!----- 베스트 영역 ----->
+
+  <section id="best_section" class="section">
+    <h2 class="hidden">베스트 제품</h2>
+    <div class="title_wrap">
+
+      <!-- 타이틀, 설명, 버튼 -->
+      <h2 class="section_title">Best Collection</h2>
+      <p>
+        이솝에서 가장 많이 선택된 제품들을 만나보실 수 있습니다.
+      </p>
+      <a href="#" class="btn">베스트 제품 더보기</a>
+    </div>
+
+    <!-- 제품 슬라이드 -->
+    <div id="best_swiper" class="swiper mySwiper">
+      <div class="item_inner swiper-wrapper">
+
+        <!-- 제품1 -->
+        <div class="slide1 swiper-slide">
+          <a href="#" class="item">
+            <img src="img/best_item1.png" alt="파슬리 씨드 안티 옥시던트 인텐스 세럼 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">파슬리 씨드 안티 옥시던트 인텐스 세럼</h4>
+            <p>피부를 탄탄하게 가꿔주는 하이드레이팅 세럼</p>
+          </div>
+        </div>
+
+        <!-- 제품2 -->
+        <div class="slide2 swiper-slide">
+          <a href="#" class="item">
+            <img src="img/best_item2.png" alt="레버런스 아로마틱 핸드 워시& 페이셜 클렌징 밀크 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">레저렉션 아로마틱 핸드 워시</h4>
+            <p class="sub">오렌지, 로즈마리, 라벤더<br> 오일을 함유한 부드러운 핸드 워시</p>
+          </div>
+        </div>
+
+        <!-- 제품3 -->
+        <div class="slide3 swiper-slide">
+          <a href="#" class=" item">
+            <img src="img/best_item3.png" alt="레저렉션 아로마틱 핸드 밤 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">레저렉션 아로마틱 핸드 밤</h4>
+            <p class="sub">시트러스, 우디, 허브향</p>
+          </div>
+        </div>
+
+        <!-- 제품4 -->
+        <div class="slide4 swiper-slide">
+          <a href="#" class="item">
+            <img src="img/best_item4.png" alt="파슬리 씨드 안티 옥시던트 인텐스 세럼 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">바디 클렌징 슬랩</h4>
+            <p class="sub">넉넉한 크기의 클렌징 슬랩</p>
+          </div>
+        </div>
+
+        <!-- 제품5 -->
+        <div class="slide5 swiper-slide">
+          <a href="#" class="item">
+            <img src="img/best_item5.png" alt="제라늄 리프 하이드레이팅 바디 트리트먼트 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">제라늄 리프 하이드레이팅 바디 트리트먼트</h4>
+            <p class="sub">깊은 보습을 위해 바디밤과<br> 블랜딩해 사용합니다</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 네비게이션 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- 페이지네이션 -->
+      <div class="best_pager"></div>
+    </div>
+  </section>
+
+  <!----- 아로마 영역 ----->
+
+  <section id="aroma_section" class="section">
+    <h2 class="hidden">아로마에 대한 설명</h2>
+
+    <div class="aroma_wrap">
+      <!-- 이미지 -->
+      <div class="aroma_img_wrap">
+        <img src="img/aroma_section_img.png" alt="아로마 오일을 손에 떨어뜨리는 이미지">
+      </div>
+
+      <!-- 타이틀, 설명, 버튼 -->
+      <div class="aroma_content">
+        <div class="aroma_title_wrap">
+          <h4 class="img_title">몸과 마음에 머무는 아로마</h4>
+          <p class="img_sub">
+            자아와 감각을 깨우는 아로마의 이솝 오드 퍼퓸은 조향에 대한
+            일반적인 관행을 따르지 않는 미묘한 차이의 접근법으로 만들어집니다.
+          </p>
+        </div>
+        <div class="btn aroma_btn">더 보기</div>
+      </div>
+    </div>
+  </section>
+
+  <!----- 홈 영역 ----->
+
+  <section id="home_section" class="section">
+    <h2 class="hidden">홈 카테고리 제품</h2>
+    <div class="title_wrap">
+
+      <!-- 타이틀, 설명, 버튼 -->
+      <h2 class="section_title">Home</h2>
+      <p class="img_sub">
+        가정을 위한 향기로운 제품으로 구성된 홈 레인지는
+        실용적일 뿐만 아니라 즐거움도 선사합니다.
+      </p>
+      <a href="#" class="btn">홈 제품 더보기</a>
+    </div>
+
+    <!-- 제품 슬라이드 -->
+    <div id="home_swiper" class="swiper mySwiper">
+      <div class="item_inner swiper-wrapper">
+
+        <!-- 제품1 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home1.png" alt="포스트-푸-드롭스 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">포스트-푸-드롭스</h4>
+            <p class="sub">보태니컬 성분의 욕실 탈취제</p>
+          </div>
+        </div>
+
+        <!-- 제품2 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home2.png" alt="올루스 아로마틱 룸 스프레이 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <h4 class="item_title">올루스 아로마틱 룸 스프레이</h4>
+            <p class="sub">가정을 상쾌하게 가꿔줍니다</p>
+          </div>
+        </div>
+
+        <!-- 제품3 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home3.png" alt="무라사키 아로마틱 인센스 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <p class="item_title">무라사키 아로마틱 인센스</p>
+            <p class="sub">따뜻한 스파이시 아로마를 좋아하는 이들에게 적합</p>
+          </div>
+        </div>
+
+        <!-- 제품4 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home4.png" alt="칼리푸스 아로마틱 캔들 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <p class="item_title">칼리푸스 아로마틱 캔들</p>
+            <p class="sub">짙은 그린과 흙내음이 나는 스파이스의 결합</p>
+          </div>
+        </div>
+
+        <!-- 제품5 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home5.png" alt="브라스 오일 버너 오브제 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <p class="item_title">브라스 오일 버너</p>
+            <p class="sub">무게감이 있는 아름다운 오브제</p>
+          </div>
+        </div>
+
+        <!-- 제품6 -->
+        <div class="swiper-slide">
+          <a href="#" class="item">
+            <img src="img/home6.png" alt="브론즈 인센스 홀더 이미지">
+          </a>
+          <div class="item_title_wrap">
+            <p class="item_title">브론즈 인센스 홀더</p>
+            <p class="sub">모든 인테리어에 적합</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 네비게이션 -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+      <!-- 페이지네이션 -->
+      <div class="home_pager"></div>
+    </div>
+  </section>
+
+  <!----- 우드 영역 ----->
+
+  <section id="wood_section" class="section">
+    <h2 class="hidden">우드향에 대한 설명</h2>
+
+    <div class="wood_wrap">
+
+      <!-- 내용, 설명, 버튼 -->
+      <div class="wood_content">
+        <div class="wood_title_wrap">
+          <h4 class="img_title">휴식과도 같은 매혹적인 우드향</h4>
+          <p class="img_sub">
+            휴식과도 같은 매혹적인 우드 향, 오렌지를 머금은 상큼한 시트러스 향이
+            손을 씻을 때마다 깨끗하고 상쾌한 기분을 선사해드립니다.
+          </p>
+        </div>
+        <div class="btn wood_btn">더 보기</div>
+      </div>
+
+      <!-- 이미지 -->
+      <div class="wood_img_wrap">
+        <img src="img/wood_section_img.png" alt="안개깔린 숲 이미지">
+      </div>
+    </div>
+  </section>
+
+  <!----- 스토어 영역 ----->
+
+  <section id="store_section" class="section">
+    <h2 class="hidden">주요 영업점과 위치 확인</h2>
+    <div class="title_wrap">
+
+      <!-- 타이틀 -->
+      <h2 class="section_title">Store</h2>
+
+      <!-- 설명 -->
+      <p class="img_sub">
+        매장에서는 이솝 컨설턴트가 고객 여러분을 따뜻하게 맞이하고 기프트 구매를
+        위한 맞춤형 컨설팅을 제공해드립니다.
+      </p>
+    </div>
+
+    <div class="store_wrap">
+      <div class="store_img">
+        <img src="img/store1.png" alt="이솝 롯데백화점 본점 이미지">
+        <img src="img/store2.png" alt="이솝 한남점 이미지">
+        <img src="img/store3.png" alt="이솝 성수점 이미지">
+      </div>
+
+      <!-- 탭 -->
+      <ul class="store_tab">
+        <li class="active">
+          <div class="tab_txt">
+            <h4>이솝 롯데백화점 본점</h4>
+            <p>서울 중구 남대문로 81 본점 지하 1층</p>
+            <p>02-772-3054</p>
+          </div>
+          <div class="map_btn active">지도 보기</div>
+        </li>
+        <li>
+          <div class="tab_txt">
+            <h4>이솝 한남점</h4>
+            <p>서울 용산구 이태원로 259-1</p>
+            <p>02-797-1987</p>
+          </div>
+          <div class="map_btn">지도 보기</div>
+        </li>
+        <li>
+          <div class="tab_txt">
+            <h4>이솝 성수점</h4>
+            <p>서울 성동구 연무장길 57</p>
+            <p>02-499-1987</p>
+          </div>
+          <div class="map_btn">지도 보기</div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 버튼 -->
+    <div class="btn store-btn">스토어 더 보기</div>
+  </section>
+
+  <!----- 푸터 ----->
+
+  <footer>
+    <h2 class="hidden">푸터</h2>
+    <div class="footer_wrap clearfix">
+      <div class="footer_inner">
+
+        <!-- 푸터 로고 -->
+        <div class="bt_logo">
+          <img src="img/logo.png" alt="이솝 푸터 로고">
+        </div>
+
+        <!-- 회사 정보 -->
+        <div class="footer_info">
+          <p class="info_txt">
+            <span>상호 : 이솝코리아 유한회사</span>
+            <span>주소 : 서울특별시 강남구 도산대로45길 10-6 이솝코리아</span>
+            <span>대표자 : 프레데리크미셸어완세일러</span><br>
+            <span>대표전화 : 1800-1987</span>
+            <span>대표 이메일 : aesop@aesop.com</span>
+            <span>호스팅 사업자 : SAP Hybris</span>
+            <span>사업자 등록 번호 : 220-88-56014</span><br>
+            <span class="business"><a href="#">사업자정보확인</a></span>
+            <span>통신판매업 신고번호 : 2014-서울강남-02300</span><br>
+            <span class="copyright"> Copyright by Aesop-K, Co.,Ltd All Rights Reserved.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- 푸터 메뉴 -->
+      <div class="bt_menu">
+        <ul>
+          <li>주문 및 지원</li>
+          <li><a href="#">문의하기</a></li>
+          <li><a href="#">배송/반품</a></li>
+          <li><a href="#">배송 조회</a></li>
+          <li><a href="#">주문 내역</a></li>
+        </ul>
+        <ul>
+          <li>소개</li>
+          <li><a href="#">브랜드 스토리</a></li>
+          <li><a href="#">채용</a></li>
+          <li><a href="#">개인정보처리방침</a></li>
+          <li><a href="#">이용약관</a></li>
+        </ul>
+        <ul>
+          <li>소셜</li>
+          <li><a href="#">Instargram</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Kakao plus friend</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!----- 스토어 맵 ----->
+
+  <div class="map_bg">
+    <!-- 맵 -->
+    <div id="map">
+      <!-- 닫기 버튼 -->
+      <img src="img/close_btn.png" class="close_btn" alt="닫기 버튼">
+
+      <!-- 롯데백화점 본점 맵 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.66122272077408!2d126.98130395622809!3d37.564968240106694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca382ff9e5dbf%3A0x5faeea4d047078ea!2z7J207IadIOuhr-uNsCDrs7jsoJAg66m07IS47KCQ!5e0!3m2!1sko!2skr!4v1688449615405!5m2!1sko!2skr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- 한남점 맵 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.8774938880174!2d127.00052531341593!3d37.537272529195455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca3b3bd35d8b3%3A0xfb4acc3bc426c1a2!2z7J207IadIO2VnOuCqA!5e0!3m2!1sko!2skr!4v1688449393247!5m2!1sko!2skr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <!-- 성수점 맵 -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1581.7697898623628!2d127.05652686547356!3d37.5423493441693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca552c172309b%3A0x1cd52edd3f84446d!2z7J207IadIOyEseyImA!5e0!3m2!1sko!2skr!4v1688447574175!5m2!1sko!2skr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
